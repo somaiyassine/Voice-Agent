@@ -1,0 +1,22 @@
+[project]
+name = "voice-clone"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yassine somai", email = "yassinesomai10@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "assemblyai>=1.10.11",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.4",
+    "sounddevice>=0.5.6",
+]
+
+[project.scripts]
+voice-clone = "voice_clone:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
